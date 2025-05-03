@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>День открытых дверей МГПУ</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+      color: #333;
+    }
+    header {
+      background: url('campus-background.jpg') center/cover no-repeat;
+      color: #fff;
+      padding: 200px 20px 60px;
+      text-align: center;
+      position: relative;
+    }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      position: absolute;
+      top: 20px;
+      left: 0;
+      right: 0;
+    }
+    .cta-button {
+      background: #fff;
+      color: #d80027;
+      padding: 10px 25px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    header h1, header p {
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .feature, .program-timeline, .faq, .registration, .contacts, .footer-contact {
+      background: #fef6f0;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .registration form input, .registration form button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      font-size: 1em;
+    }
+    .registration form input {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .registration form button {
+      background-color: #d80027;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .registration form button:hover {
+      background-color: #b00020;
+    }
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+  
+    </div>
+    <div class="header-top">
+      <img src="logo.png" alt="МГПУ Логотип" style="max-height: 80px;">
+      <a href="#register" class="cta-button">Зарегистрироваться</a>
+    </div>
+    <div style="text-align: center;">
+      <p>10 мая 2025 | 10:00</p>
+      <p>Начни путь в профессию с МГПУ — приходи на День открытых дверей!</p>
+      <p>Погрузись в студенческую жизнь, познакомься с преподавателями, узнай всё о поступлении.</p>
+    </div>
+  </header>
+
+  <section>
+    <h2>Что вас ждёт</h2>
+    <div class="features">
+      <div class="feature">👥 Знакомство с преподавателями и студентами</div>
+      <div class="feature">🧭 Экскурсия по корпусу</div>
+      <div class="feature">📚 Презентации программ</div>
+      <div class="feature">💬 Ответы на вопросы</div>
+      <div class="feature">🛠 Мастер-классы</div>
+      <div class="feature">🎁 Сувениры и розыгрыши</div>
+    </div>
+
+    <div class="program-timeline">
+      <h2>Программа мероприятия</h2>
+      <ul>
+        <li>10:00 – Регистрация</li>
+        <li>10:30 – Открытие</li>
+        <li>11:00 – Презентация программ</li>
+        <li>11:30 – Экскурсии и мастер-классы</li>
+        <li>12:30 – Вопросы/ответы, индивидуальные консультации</li>
+      </ul>
+    </div>
+
+    <div class="contacts">
+      <h2>Как добраться</h2>
+      <p>📍 Москва, 2-й Сельскохозяйственный пр-д, д. 4, корп. 2, 129226</p>
+      <p>Метро ВДНХ, автобус/пешком</p>
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4784b276fb3db7c70b39e0c38e40877a5fdb2049e1bd4f8fd23387c9e1389a29&amp;source=constructor"></iframe>
+    </div>
+
+    <div class="faq">
+      <h2>Часто задаваемые вопросы</h2>
+      <p><strong>Что взять с собой?</strong> Паспорт и хорошее настроение.</p>
+      <p><strong>Нужно ли регистрироваться?</strong> Да, через форму ниже.</p>
+      <p><strong>Можно ли прийти с родителями?</strong> Конечно!</p>
+      <p><strong>Где узнать про приём?</strong> На сайте <a href="https://priem.mgpu.ru">priem.mgpu.ru</a> или по телефонам ниже.</p>
+    </div>
+
+    <div id="register" class="registration">
+      <h2>Форма регистрации</h2>
+      <form>
+        <input type="text" placeholder="Ваше имя" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Класс / вуз / профориентация">
+        <button type="submit">Записаться</button>
+      </form>
+    </div>
+
+    <div class="footer-contact">
+      <h2>Контакты</h2>
+      <p>📞 +7 (499) 181-21-33 / +7 (499) 181-21-77</p>
+      <p>📧 priem@mgpu.ru</p>
+      <p>🔗 <a href="https://vk.com/rumgpu?from=search">ВКонтакте</a> | <a href="https://t.me/mgpu_official">Telegram</a> | <a href="https://mgpu.ru">mgpu.ru</a></p>
+      <p><a href="#register" class="cta-button">Задать вопрос</a></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 МГПУ | Все права защищены
+  </footer>
+</body>
+</html>
